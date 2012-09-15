@@ -1,0 +1,26 @@
+{
+  "name": "binions",
+  "version": "0.0.1",
+  "description": "Javascript Poker Hand Evaluator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script test/*_test.coffee",
+    "prepublish": "coffee -o lib -c src/*.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mdp/binions.git"
+  },
+  "keywords": [
+    "poker",
+    "poker-hand",
+    "poker-hands"
+  ],
+  "devDependencies": {
+     "coffee-script" : "1.3.x"
+    ,"should" : ">=1.1.0"
+    ,"mocha" : ">=1.4.2"
+  },
+  "author": "Mark Percival",
+  "license": "MIT"
+}
