@@ -1,8 +1,8 @@
 {
   "name": "binions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Javascript Poker Hand Evaluator",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script test/*_test.coffee",
     "prepublish": "coffee -o lib -c src/*.coffee"

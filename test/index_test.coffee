@@ -1,5 +1,5 @@
 assert = require 'assert'
-index = require '../index'
+index = require '../src/index'
 
 describe "Using the Hand builder", ->
   it "should return a hand with cards sorted", ->
