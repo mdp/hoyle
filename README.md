@@ -39,7 +39,7 @@ Status](https://secure.travis-ci.org/mdp/binions.png)](http://travis-ci.org/mdp/
 
 - Handles making the best poker hand out of 5-7 cards
 - Written for code clarity, not speed (But still plenty fast for many
-user) See
-["THE GREAT POKER HAND EVALUATOR
-ROUNDUP"](http://www.codingthewheel.com/archives/poker-hand-evaluator-roundup)
+uses) See
+["The Great Poker Hand Evaluator
+Roundup"](http://www.codingthewheel.com/archives/poker-hand-evaluator-roundup)
 for a deeper dive into speedy poker hand evaluators.
