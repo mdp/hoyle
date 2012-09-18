@@ -1,6 +1,6 @@
 {
   "name": "binions",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Javascript Poker Hand Evaluator",
   "main": "lib/index.js",
   "scripts": {
