@@ -12,13 +12,16 @@ class exports.Deck extends EventEmitter
       @cards.push new Card("#{value}c")
 
   shuffle: (cb) ->
-    rounds = 5
-    length = @cards.length
-    crypto.randomBytes (rounds * length), (ex,buf) =>
-      for num in [0..rounds]
-        i = 0
+    rounds = 3
+    # Average case sort operations * 3 rounds
+    # This might be overkill
+    length = Math.ceil(@cards.length * Math.log(@cards.length)) * rounds
+    i = 0
+    crypto.randomBytes (length), (ex,buf) =>
+      j = i % length
+      for k in [0..rounds]
         @cards.sort ->
-          val = buf[(length * num) + num]; i++
+          val = buf[j]; i++
           if val % 2 == 1
             1
           else
