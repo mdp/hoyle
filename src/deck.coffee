@@ -18,9 +18,9 @@ class exports.Deck extends EventEmitter
     length = Math.ceil(@cards.length * Math.log(@cards.length)) * rounds
     i = 0
     crypto.randomBytes (length), (ex,buf) =>
-      j = i % length
-      for k in [0..rounds]
+      for k in [1..rounds]
         @cards.sort ->
+          j = i % length
           val = buf[j]; i++
           if val % 2 == 1
             1
