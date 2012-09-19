@@ -1,12 +1,12 @@
 [![Build
-Status](https://secure.travis-ci.org/mdp/binions.png)](http://travis-ci.org/mdp/binions)
+Status](https://secure.travis-ci.org/mdp/hoyle.png)](http://travis-ci.org/mdp/hoyle)
 
-# Binions
+# Hoyle
 ## A Javascript poker hand evaluator (Written in Coffeescript)
 
 ### Example
 
-    Hand = require('binions').Hand
+    Hand = require('hoyle').Hand
 
     describe "Finding winning hands", ->
       it "should detect the winning hand from a list", ->
@@ -20,12 +20,12 @@ Status](https://secure.travis-ci.org/mdp/binions.png)](http://travis-ci.org/mdp/
 
 ### Install
 
-    npm install binions
+    npm install hoyle
 
 ### Install and use locally
 
-    git clone git://github.com/mdp/binions.git
-    cd binions
+    git clone git://github.com/mdp/hoyle.git
+    cd hoyle
     npm install
     npm run-script prepublish
     npm link
