@@ -1,5 +1,5 @@
 {
-  "name": "binions",
+  "name": "hoyle",
   "version": "0.1.5",
   "description": "Javascript Poker Hand Evaluator",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mdp/binions.git"
+    "url": "git://github.com/mdp/hoyle.git"
   },
   "keywords": [
     "poker",
