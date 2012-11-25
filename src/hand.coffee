@@ -7,7 +7,7 @@ exports.Hand = class Hand
     @suits = {}
     @values = []
     @cardPool = cards.map (c) ->
-      if toString.call(c) == '[object String]'
+      if typeof c == 'string'
         new Card(c)
       else
         c
