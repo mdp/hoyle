@@ -133,10 +133,12 @@ exports.FullHouse = class FullHouse extends Hand
       if cards && cards.length == 3
         @cards = cards
         break
-    for cards in @values
-      if cards && cards.length == 2
-        @cards = @cards.concat cards
-        break
+    if @cards.length == 3
+      for cards in @values
+        if cards && cards.length >= 2
+          if @cards[0].value != cards[0].value
+            @cards = @cards.concat cards.slice(0,2)
+            break
     @cards.length == 5
 
 exports.Flush = class Flush extends Hand

@@ -1,6 +1,6 @@
 {
   "name": "hoyle",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Javascript Poker Hand Evaluator",
   "main": "lib/index.js",
   "scripts": {

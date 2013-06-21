@@ -34,6 +34,8 @@ describe "A full house", ->
   it "should detect when it's possible", ->
     hand = new FullHouse(["5s","5h","3s","3c","2s","Ts","3d"])
     hand.isPossible.should.equal true
+    hand = new FullHouse(["8c", "8d", "Qh", "Qd", "Qs", "8h", "5s"])
+    hand.isPossible.should.equal true
   it "should detect a when it's not possible", ->
     hand = new FullHouse(["5s","5h","3s","3c","2s","Ts","Td"])
     hand.isPossible.should.equal false
