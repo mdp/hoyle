@@ -1,7 +1,10 @@
 [![Build
 Status](https://secure.travis-ci.org/mdp/hoyle.png)](http://travis-ci.org/mdp/hoyle)
 
+![Hoyle](http://img.mdp.im.s3.amazonaws.com/2013m15u0001_2008035_0000084.jpg_18631321mjcge.jpg)
+
 # Hoyle
+
 ## A Javascript poker hand evaluator (Written in Coffeescript)
 
 ### Example
