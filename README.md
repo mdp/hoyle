@@ -44,5 +44,5 @@ Status](https://secure.travis-ci.org/mdp/hoyle.png)](http://travis-ci.org/mdp/ho
 - Written for code clarity, not speed (But still plenty fast for many
 uses) See
 ["The Great Poker Hand Evaluator
-Roundup"](http://www.codingthewheel.com/archives/poker-hand-evaluator-roundup)
+Roundup"](http://web.archive.org/web/20140625212722/http://codingthewheel.com/archives/poker-hand-evaluator-roundup/)
 for a deeper dive into speedy poker hand evaluators.
