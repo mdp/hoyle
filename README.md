@@ -16,7 +16,7 @@ Status](https://secure.travis-ci.org/mdp/hoyle.png)](http://travis-ci.org/mdp/ho
         gary = Hand.make(["2s","3s","4h","5c","As","Ts","8d"])
         mike = Hand.make(["5s","Ts","3h","Ac","2s","Ts","8d"])
         steve = Hand.make(["5s","5h","3s","3c","2s","Ts","3d"])
-        winners = Hand.pickWinners([h1,h2,h3])
+        winners = Hand.pickWinners([gary, mike, steve])
         winners.length.should.equal 1
         winners[0].should.equal steve
         winners[0].name.should.equal "Full house"
