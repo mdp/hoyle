@@ -1,26 +1,26 @@
 {
-  "name": "hoyle",
-  "version": "0.2.2",
-  "description": "Javascript Poker Hand Evaluator",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "mocha --compilers coffee:coffee-script test/*_test.coffee",
-    "prepublish": "rm -rf lib && coffee --compile -o lib/ src/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mdp/hoyle.git"
-  },
-  "keywords": [
-    "poker",
-    "poker-hand",
-    "poker-hands"
-  ],
-  "devDependencies": {
-     "coffee-script" : "1.3.x"
-    ,"should" : ">=1.1.0"
-    ,"mocha" : ">=1.4.2"
-  },
-  "author": "Mark Percival <mark@markpercival.us> (http://markpercival.us)",
-  "license": "MIT"
+    "name": "hoyle",
+    "version": "0.2.2",
+    "description": "Javascript Poker Hand Evaluator",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "mocha --require coffeescript  test/*_test.coffee",
+        "prepare": "rm -rf lib && coffee --compile -o lib/ src/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mdp/hoyle.git"
+    },
+    "keywords": [
+        "poker",
+        "poker-hand",
+        "poker-hands"
+    ],
+    "devDependencies": {
+        "coffeescript": "1.4.x",
+        "should": ">=1.1.0",
+        "mocha": ">=1.4.2"
+    },
+    "author": "Mark Percival <mark@markpercival.us> (http://markpercival.us)",
+    "license": "MIT"
 }
