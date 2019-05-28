@@ -2,7 +2,10 @@
     "name": "hoyle",
     "version": "0.2.2",
     "description": "Javascript Poker Hand Evaluator",
-    "main": "lib/index.js",
+    "main": "lib/index",
+    "engines": {
+        "node": ">=8.16.0"
+    },
     "scripts": {
         "test": "mocha --require coffeescript  test/*_test.coffee",
         "prepare": "rm -rf lib && coffee --compile -o lib/ src/"
