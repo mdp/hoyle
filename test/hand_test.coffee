@@ -137,3 +137,10 @@ describe "Finding winning hands", ->
     (winners.indexOf(h1) >= 0).should.equal true
     (winners.indexOf(h2) >= 0).should.equal true
 
+describe "Setting a player name", -> 
+  it "should be reflected in the object value when set", ->
+    h = Hand.make(["2s","3s","4h","5c","As"], 'nameyname')
+    h.player.should.equal 'nameyname'
+  it "should show player name as flase when not set", ->
+    h = Hand.make(["2s","3s","4h","5c","As"])
+    h.player.should.equal false

@@ -1,8 +1,11 @@
 {
   "name": "hoyle",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Javascript Poker Hand Evaluator",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=8.16.0"
+  },
   "scripts": {
     "test": "mocha --require coffeescript/register test/*_test.coffee",
     "prepublish": "rm -rf lib && coffee --compile -o lib/ src/"
@@ -21,6 +24,6 @@
     ,"should" : ">=1.1.0"
     ,"mocha" : ">=1.4.2"
   },
-  "author": "Mark Percival <mark@markpercival.us> (http://markpercival.us)",
+  "author": "Mark Percival <m@mdp.im> (http://mdp.im)",
   "license": "MIT"
 }

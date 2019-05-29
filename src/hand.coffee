@@ -1,11 +1,12 @@
 {Card} = require './card'
 exports.Hand = class Hand
   # Need to take 7 cards, and return a best hand
-  constructor: (cards) ->
+  constructor: (cards, playerName = false) ->
     @cardPool = []
     @cards = []
     @suits = {}
     @values = []
+    @player = playerName
     @cardPool = cards.map (c) ->
       if typeof c == 'string'
         new Card(c)
@@ -88,14 +89,14 @@ Hand.pickWinners = (hands) ->
     !loses
   hands
 
-Hand.make = (cards) ->
+Hand.make = (cards, playerName = false) ->
   # Build and return the best hand
   #
   hands = [StraightFlush, FourOfAKind, FullHouse, Flush, Straight,
     ThreeOfAKind, TwoPair, OnePair, HighCard]
   result = null
   for hand in hands
-    result = new hand(cards)
+    result = new hand(cards, playerName)
     break if result.isPossible
   result
 
