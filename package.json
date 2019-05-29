@@ -4,7 +4,7 @@
   "description": "Javascript Poker Hand Evaluator",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script test/*_test.coffee",
+    "test": "mocha --require coffeescript/register test/*_test.coffee",
     "prepublish": "rm -rf lib && coffee --compile -o lib/ src/"
   },
   "repository": {
@@ -17,7 +17,7 @@
     "poker-hands"
   ],
   "devDependencies": {
-     "coffee-script" : "1.3.x"
+     "coffeescript" : ">= 2.4.x"
     ,"should" : ">=1.1.0"
     ,"mocha" : ">=1.4.2"
   },

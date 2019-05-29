@@ -4,6 +4,7 @@ crypto = require 'crypto'
 
 class exports.Deck extends EventEmitter
   constructor: ->
+    super()
     @cards = []
     for value in Card.VALUES.slice(1,14)
       @cards.push new Card("#{value}s")
